@@ -77,9 +77,7 @@ export const List = (props) => {
       }
     }
 
-    console.log(new_table);
-
-    setData(new_table);
+    setData(new_table.sort((a, b) => a.id - b.id));
   };
   return (
     <div className="grid-card">
